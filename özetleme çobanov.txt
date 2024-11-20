@@ -1,0 +1,30 @@
+-Birinci terminalde çalıştır.
+ollama run llama3:instruct
+-İkinci terminalde çalıştır.
+cd /home/h4ck3r/Desktop/
+sudo mkdir YZ3N
+sudo chmod 777 YZ3N/
+cd YZ3N/
+git clone https://github.com/cobanov/easy-web-summarizer.git
+cd easy-web-summarizer/
+sudo pico requirements.txt
+	beautifulsoup4==4.12.3
+	gradio==4.44.0
+	gradio_client==1.3.0
+	langchain==0.1.13
+	langchain-community==0.0.38
+	langchain-core==0.1.52
+	langchain-text-splitters==0.0.2
+
+cd ..
+python3 -m venv YZ3N/
+source YZ3N/bin/activate
+cd YZ3N/
+cd easy-web-summarizer/
+ls -la
+pip install -r requirements.txt 
+python3 app/webui.py
+-İşlem tamamlandıktan sonra:
+http://0.0.0.0:7860/  adresinden testler yapınız!!!
+-Buna export butonu ekleyip çıktıları pdf veya docx olarak kaydediniz.
+-https://openrouter.ai/mistralai/mistral-7b-instruct:free/api kısmına bir bakınız herkes api-key oluşturarak gelsin.
